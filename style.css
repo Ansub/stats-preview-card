@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0c1a;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box {
+  width: 1000px;
+  height: 400px;
+  background-color: #1b1936;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+img {
+  width: 450px;
+  height: 400px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.small-box {
+  width: 450px;
+  height: 400px;
+  background-color: rgba(131, 34, 191, 0.612);
+  position: absolute;
+  border-radius: 0px 10px 10px 0px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  padding: 50px 80px 20px;
+  margin-top: 1.2rem;
+  font-size: 2rem;
+}
+.desc {
+  color: #86849a;
+  font-family: "Lexend Deca", sans-serif;
+  padding-left: 70px;
+  padding-right: 120px;
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+}
+.purple {
+  color: #a05fd2;
+}
+
+.lower ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  letter-spacing: 1px;
+  margin: 50px 80px 2px 60px;
+}
+
+.lower ul h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+}
+.lower ul p {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  color: #86849a;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 300px;
+    height: 653px;
+    background-color: #1b1936;
+    border-radius: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h1 {
+    padding: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  img {
+    width: 300px;
+    height: 209px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .small-box {
+    width: 300px;
+    height: 209px;
+    background-color: rgba(131, 34, 191, 0.612);
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .desc {
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .lower ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 12px 0px 0px 0px;
+  }
+
+  .lower ul li {
+    margin-bottom: 1em;
+  }
+  .lower ul h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0.25em;
+  }
+  .lower ul p {
+    font-size: 0.8rem;
+  }
+}
